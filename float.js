@@ -37,7 +37,7 @@ class FixedFloat {
 class Float {
     constructor(Number, Representation = "BinaryIEEE") {
         this.__proto__.SetValue = function(This, Number, Representation) {
-            this.__proto__.Representation = Representation;
+            This.__proto__.Representation = Representation;
             This.__proto__.Number = (parseInt((Number * 4096).toString(2), 2) / 4096).toFixed(12); // 4096 = 2^12
             This.__proto__.AbsoluteNumber = (parseInt((Math.abs(Number) * 4096).toString(2), 2) / 4096).toFixed(12);
             This.__proto__.Sign = + (This.__proto__.Number < 0);
