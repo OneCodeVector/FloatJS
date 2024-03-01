@@ -1,8 +1,8 @@
+/*
+
 function FixFloat(Float, Precision) {
     Math.round(Float * Math.pow(10, Precision)) / Math.pow(10, Precision);
 }
-
-/*
 
 https://stackoverflow.com/questions/812961/getters-setters-for-dummies
 https://stackoverflow.com/questions/3096646/how-to-convert-a-floating-point-number-to-its-binary-representation-ieee-754-i
