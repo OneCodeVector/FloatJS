@@ -30,7 +30,7 @@ function DoubleToIEEE(f)
 
 class FixedFloat {
     constructor(Float, Precision) {
-        
+
     }
 }
 
@@ -46,7 +46,7 @@ class Float {
 
             This.__proto__.DecimalRepresentation = (This.__proto__.Sign << 31) | (This.__proto__.Exponent << 23) +127 | ((This.__proto__.Mantissa * 8388608) & 0x7FFFFF); // 8388608 = 2^23
             This.__proto__.StringBinaryRepresentation = This.__proto__.DecimalRepresentation.toString(2);
-            This.__proto__.BinaryRepresentation = parseInt(This.__proto__.StringBinaryRepresentation)
+            This.__proto__.BinaryRepresentation = parseInt(This.__proto__.StringBinaryRepresentation);
         }
 
         this.__proto__.SetValue(this, Number, Representation);
